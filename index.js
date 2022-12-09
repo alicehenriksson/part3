@@ -1,6 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-var morgan = require('morgan')
+const morgan = require('morgan')
 
 const app = express()
 
@@ -84,7 +84,7 @@ app.delete('/api/persons/:id',(request,response) => {
 // Add an entry
 app.post('/api/persons', (request, response) => {
     const body = request.body
-
+    console.log(request.body)
     // Error handling:
     if (!body.name) {
         return response.status(400).json({ 
