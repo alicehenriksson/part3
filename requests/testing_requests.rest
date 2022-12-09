@@ -1,0 +1,17 @@
+### Add a new note
+POST http://localhost:3001/api/persons
+content-type: application/json
+
+{
+    "name": "Artor Hellas",
+    "number": "123123"
+}
+
+### Get everything
+GET http://localhost:3001/api/persons
+
+### Get info page
+GET http://localhost:3001/api/info
+
+### Delete entry
+DELETE http://localhost:3001/api/persons/1
