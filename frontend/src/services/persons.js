@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = 'backend-production-2130.up.railway.app/api/persons'
+const baseUrl = 'www.backend-production-2130.up.railway.app/api/persons'
 
 const getAll = () => {
     const request = axios.get(baseUrl)
